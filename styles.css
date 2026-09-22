@@ -525,26 +525,42 @@ html.avatar-pinned .avatar-illustration {
   border: 1px solid var(--line);
   border-radius: 8px;
   display: grid;
-  gap: 20px;
-  grid-template-columns: 82px minmax(0, 1fr);
-  min-height: 118px;
-  padding: 20px 22px;
+  gap: 22px;
+  grid-template-columns: 190px minmax(0, 1fr);
+  min-height: 142px;
+  padding: 22px 24px;
 }
 
 .experience-logo {
   align-items: center;
   display: flex;
-  height: 64px;
+  height: 104px;
   justify-content: center;
-  width: 82px;
+  width: 190px;
 }
 
 .experience-logo img {
   display: block;
-  max-height: 48px;
-  max-width: 70px;
+  height: auto;
+  max-height: 78px;
+  max-width: 160px;
   object-fit: contain;
   width: auto;
+}
+
+.experience-logo-wide img {
+  max-height: 66px;
+  max-width: 184px;
+}
+
+.experience-logo-li img {
+  max-height: 72px;
+  max-width: 132px;
+}
+
+.experience-logo-ntu img {
+  max-height: 88px;
+  max-width: 174px;
 }
 
 .timeline .role {
@@ -649,13 +665,35 @@ html.avatar-pinned .avatar-illustration {
   }
 
   .experience-card {
-    grid-template-columns: 68px minmax(0, 1fr);
+    gap: 18px;
+    grid-template-columns: 1fr;
+    min-height: 128px;
     padding: 18px;
   }
 
   .experience-logo {
-    height: 58px;
-    width: 68px;
+    height: 92px;
+    width: 100%;
+  }
+
+  .experience-logo img {
+    max-height: 72px;
+    max-width: min(210px, 82%);
+  }
+
+  .experience-logo-wide img {
+    max-height: 68px;
+    max-width: min(230px, 88%);
+  }
+
+  .experience-logo-li img {
+    max-height: 72px;
+    max-width: min(136px, 58%);
+  }
+
+  .experience-logo-ntu img {
+    max-height: 86px;
+    max-width: min(210px, 82%);
   }
 }
 
