@@ -40,7 +40,7 @@ html {
 body {
   background-color: #f8fbfd;
   background-image:
-    linear-gradient(180deg, rgba(250, 253, 255, 0.9) 0, rgba(250, 253, 255, 0.82) 34%, rgba(255, 255, 255, 0.95) 72%, #fff 100%),
+    linear-gradient(180deg, rgba(250, 253, 255, 0.76) 0, rgba(250, 253, 255, 0.64) 34%, rgba(255, 255, 255, 0.88) 72%, #fff 100%),
     linear-gradient(rgba(1, 47, 99, 0.032) 1px, transparent 1px),
     linear-gradient(90deg, rgba(1, 47, 99, 0.032) 1px, transparent 1px),
     url("./assets/backgrounds/real-snow-mountains.webp");
@@ -58,7 +58,7 @@ body::before {
   content: "";
   background:
     radial-gradient(circle at 78% 8%, rgba(222, 240, 248, 0.64), transparent 34%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.72) 72%, #fff 100%);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.56) 72%, #fff 100%);
   inset: 0;
   pointer-events: none;
   position: fixed;
@@ -514,8 +514,8 @@ html.avatar-pinned .avatar-illustration {
   font-size: 13px;
   font-weight: 800;
   line-height: 1.32;
-  max-width: 100px;
-  white-space: normal;
+  max-width: none;
+  white-space: nowrap;
 }
 
 .experience-card {
