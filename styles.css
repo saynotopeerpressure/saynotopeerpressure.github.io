@@ -38,9 +38,16 @@ html {
 }
 
 body {
-  background:
-    radial-gradient(circle at 78% 8%, rgba(211, 235, 247, 0.58), transparent 34%),
-    linear-gradient(180deg, rgba(246, 251, 254, 0.96) 0, rgba(255, 255, 255, 0.96) 42%, #fff 100%);
+  background-color: #f8fbfd;
+  background-image:
+    linear-gradient(180deg, rgba(250, 253, 255, 0.9) 0, rgba(250, 253, 255, 0.82) 34%, rgba(255, 255, 255, 0.95) 72%, #fff 100%),
+    linear-gradient(rgba(1, 47, 99, 0.032) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(1, 47, 99, 0.032) 1px, transparent 1px),
+    url("./assets/backgrounds/real-snow-mountains.webp");
+  background-position: center, top left, top left, center top;
+  background-repeat: no-repeat, repeat, repeat, no-repeat;
+  background-size: auto, 34px 34px, 34px 34px, cover;
+  background-attachment: fixed, fixed, fixed, fixed;
   color: var(--ink);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
   line-height: 1.68;
@@ -48,11 +55,10 @@ body {
 }
 
 body::before {
-  background-image:
-    linear-gradient(rgba(1, 47, 99, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(1, 47, 99, 0.035) 1px, transparent 1px);
-  background-size: 34px 34px;
   content: "";
+  background:
+    radial-gradient(circle at 78% 8%, rgba(222, 240, 248, 0.64), transparent 34%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.72) 72%, #fff 100%);
   inset: 0;
   pointer-events: none;
   position: fixed;
@@ -449,13 +455,13 @@ html.avatar-pinned .avatar-illustration {
 }
 
 .timeline::before {
-  background: rgba(229, 101, 139, 0.38);
+  background: linear-gradient(180deg, rgba(229, 101, 139, 0.2), rgba(229, 101, 139, 0.52), rgba(229, 101, 139, 0.16));
   bottom: 14px;
   content: "";
-  left: 76px;
+  left: 132px;
   position: absolute;
   top: 14px;
-  width: 3px;
+  width: 2px;
 }
 
 .timeline article {
@@ -467,46 +473,48 @@ html.avatar-pinned .avatar-illustration {
 }
 
 .timeline article::before {
-  background: #ef2f80;
-  border: 4px solid #fff;
+  background: linear-gradient(135deg, #0b3f75, #e5658b);
+  border: 5px solid rgba(255, 255, 255, 0.96);
   border-radius: 999px;
-  box-shadow: 0 0 0 1px rgba(229, 101, 139, 0.22);
+  box-shadow: 0 0 0 1px rgba(229, 101, 139, 0.22), 0 8px 18px rgba(229, 101, 139, 0.14);
   content: "";
-  height: 14px;
-  left: 69px;
+  height: 15px;
+  left: 124.5px;
   position: absolute;
-  top: 22px;
-  width: 14px;
+  top: 35px;
+  width: 15px;
   z-index: 1;
 }
 
 .timeline-date {
   display: grid;
-  gap: 10px;
-  justify-items: center;
-  padding-top: 4px;
-  text-align: center;
+  gap: 7px;
+  justify-items: end;
+  padding-right: 34px;
+  padding-top: 12px;
+  text-align: right;
 }
 
 .timeline-date span {
-  background: #ffb8d2;
+  background: rgba(255, 246, 250, 0.9);
+  border: 1px solid rgba(229, 101, 139, 0.22);
   border-radius: 999px;
-  color: #fff;
+  color: #e94f86;
   display: inline-flex;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 900;
   justify-content: center;
-  min-width: 88px;
-  padding: 4px 14px;
+  min-width: 72px;
+  padding: 3px 12px;
 }
 
 .timeline time {
-  color: #a2a8b2;
+  color: #8d98a7;
   display: block;
   font-size: 13px;
-  font-weight: 750;
-  line-height: 1.35;
-  max-width: 92px;
+  font-weight: 800;
+  line-height: 1.32;
+  max-width: 100px;
   white-space: normal;
 }
 
